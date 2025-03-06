@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins';
+    transition: 0.2s ease-in-out;
+}
+
+header {
+    width: 100%;
+    background: transparent;
+    height: 100px;
+    padding: 40px;
+    position: fixed;
+    z-index: 1;
+    transition: 0.3s ease-in-out;
+}
+
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    height: 100vh;
+}
+
+#home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgb(255, 96, 122), rgb(217, 132, 146), rgb(250, 80, 100), rgb(255, 50, 90), rgb(200, 90, 120), rgb(180, 50, 100));
+    background-size: 300% 300%;
+    animation: background_animation 10s ease-in-out infinite;
+    transition: background 0.5s ease-in-out;
+}
+
+@keyframes background_animation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    25% {
+        background-position: 50% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    75% {
+        background-position: 50% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+#home .texto {
+    text-align: center;
+    color: white;
+}
+
+#home .texto h1 {
+    font-size: 80px;
+}
+
+#home .texto p {
+    max-width: 1200px;
+}
+
+#mulher1 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: linear-gradient(180deg, rgb(217, 132, 146), rgb(255, 96, 122));
+}
+
+#mulher1 .card {
+    background-color: white;
+    width: 800px;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgb(255, 96, 122);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+#mulher1 img {
+    max-width: 300px;
+    border-radius: 50%;
+}
+
+#mulher2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row-reverse;
+    background: linear-gradient(180deg, rgb(255, 96, 122), rgb(217, 132, 146));
+
+}
+
+#mulher2 .card {
+    background-color: white;
+    width: 800px;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgb(255, 96, 122);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+#mulher2 img {
+    max-width: 300px;
+    border-radius: 50%;
+}
+
+#mulher3 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: linear-gradient(180deg, rgb(217, 132, 146), rgb(255, 96, 122));
+}
+
+#mulher3 .card {
+    background-color: white;
+    width: 800px;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgb(255, 96, 122);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+#mulher3 img {
+    max-width: 300px;
+    border-radius: 50%;
+}
+
+#mulher4 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row-reverse;
+    background: linear-gradient(180deg, rgb(255, 96, 122), rgb(217, 132, 146));
+}
+
+#mulher4 .card {
+    background-color: white;
+    width: 800px;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgb(255, 96, 122);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+#mulher4 img {
+    max-width: 300px;
+    border-radius: 50%;
+}
+
+#mulher5 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: linear-gradient(180deg, rgb(217, 132, 146), rgb(255, 96, 122));
+}
+
+#mulher5 .card {
+    background-color: white;
+    width: 800px;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgb(255, 96, 122);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+#mulher5 img {
+    max-width: 300px;
+    border-radius: 50%;
+}
+
+#mulher6 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row-reverse;
+    background: linear-gradient(180deg, rgb(255, 96, 122), rgb(217, 132, 146));
+}
+
+#mulher6 .card {
+    background-color: white;
+    width: 800px;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgb(255, 96, 122);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+#mulher6 img {
+    max-width: 300px;
+    border-radius: 50%;
+}
