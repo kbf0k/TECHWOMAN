@@ -35,7 +35,7 @@ nav ul li img {
 }
 
 nav ul li img:hover {
-    filter: drop-shadow(0px 0px 30px white);
+    filter: drop-shadow(0px 0px 20px rgb(255, 0, 43));
 }
 
 
@@ -44,6 +44,15 @@ nav ul li .mulheres {
     text-decoration: none;
     position: relative;
     max-width: max-content;
+    transition: 0.2s ease-in-out;
+    padding-left: 6px;
+    padding-right: 6px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+nav ul li .mulheres:hover {
+    box-shadow: 0 0 30px rgb(255, 0, 43);
 }
 
 nav ul li .mulheres::after {
@@ -55,26 +64,39 @@ nav ul li .mulheres::after {
     height: 8%;
     background-color: white;
     transition: 0.2s ease-in-out;
+    margin-left: 5px;
 }
 
 nav ul li .mulheres:hover::after {
-    width: 110%;
+    width: 105%;
 }
 
-
-section {
-    height: 100vh;
-}
 
 #home {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(80deg, rgb(255, 96, 122), rgb(250, 80, 100), rgb(255, 50, 90), rgb(255, 96, 122), rgb(255, 50, 90));
+    background: linear-gradient(160deg, rgb(10, 0, 5), rgb(100, 3, 19), rgb(50, 2, 10));
     background-size: 300% 300%;
     animation: background_animation 10s ease-in-out infinite;
     transition: background 0.5s ease-in-out;
+    height: 100vh;
 }
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #222;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(145, 11, 34);
+    border-radius: 10px;
+}
+
+
 
 @keyframes background_animation {
     0% {
@@ -105,7 +127,7 @@ section {
 }
 
 #home .texto #slogan {
-    margin-top: -60px;
+    margin-top: -35px;
     margin-bottom: 50px;
     font-size: 30px;
     letter-spacing: 7px;
@@ -189,13 +211,12 @@ section {
     }
 }
 
-
-
 #home .texto h1 {
-    font-size: 180px;
+    font-size: 120px;
     text-align: left;
     padding-left: 50px;
     color: white;
+    transition: 0.2s ease-in-out;
 }
 
 #home .texto p {
@@ -209,7 +230,7 @@ section {
     padding: 10px 22px;
     border-radius: 20px;
     background-color: white;
-    color: rgb(255, 50, 90);
+    color: rgb(100, 3, 19);
     border: none;
     transition: 0.2s ease-in-out;
     text-decoration: none;
@@ -219,165 +240,154 @@ section {
 }
 
 #home .texto #saiba_mais:hover {
-    background-color: rgb(223, 223, 223);
+    box-shadow: 0 0 30px rgb(255, 0, 43);
 }
 
-#Grace_Hopper {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    background: linear-gradient(180deg, rgb(255, 50, 90), rgb(255, 96, 122));
-}
-
-#Grace_Hopper .card {
-    background-color: white;
-    width: 800px;
-    padding: 50px;
-    border-radius: 20px;
-    box-shadow: 0 0 30px rgb(255, 96, 122);
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
-}
-
-#Grace_Hopper img {
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 50%;
-}
-
-#Ada_Lavelace {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: row-reverse;
-    background: linear-gradient(180deg, rgb(255, 96, 122), rgb(255, 50, 90));
-
-}
-
-#Ada_Lavelace .card {
-    background-color: white;
-    width: 800px;
-    padding: 50px;
-    border-radius: 20px;
-    box-shadow: 0 0 30px rgb(255, 96, 122);
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
-}
-
-#Ada_Lavelace img {
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 50%;
-}
-
-#Margaret_Hamilton {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    background: linear-gradient(180deg, rgb(255, 50, 90), rgb(255, 96, 122));
-}
-
-#Margaret_Hamilton .card {
-    background-color: white;
-    width: 800px;
-    padding: 50px;
-    border-radius: 20px;
-    box-shadow: 0 0 30px rgb(255, 96, 122);
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
-}
-
-#Margaret_Hamilton img {
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 50%;
-}
-
-#Katherine_Johson {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: row-reverse;
-    background: linear-gradient(180deg, rgb(255, 96, 122), rgb(255, 50, 90));
-}
-
-#Katherine_Johson .card {
-    background-color: white;
-    width: 800px;
-    padding: 50px;
-    border-radius: 20px;
-    box-shadow: 0 0 30px rgb(255, 96, 122);
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
-}
-
-#Katherine_Johson img {
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 50%;
-}
-
+#Grace_Hopper,
+#Ada_Lavelace,
+#Margaret_Hamilton,
+#Katherine_Johson,
+#Sônia_Guimarães,
 #Radia_Perlman {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background: linear-gradient(180deg, rgb(255, 50, 90), rgb(255, 96, 122));
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
 }
 
-#Radia_Perlman .card {
-    background-color: white;
-    width: 800px;
-    padding: 50px;
-    border-radius: 20px;
-    box-shadow: 0 0 30px rgb(255, 96, 122);
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
+#Grace_Hopper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(img/Grace\ Hopper.png);
+    background-position: center;
+    background-size: cover;
+    filter: brightness(0.5);
+    z-index: -1;
 }
 
-#Radia_Perlman img {
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 50%;
+
+#Grace_Hopper h1,
+#Ada_Lavelace h1,
+#Margaret_Hamilton h1,
+#Katherine_Johson h1,
+#Sônia_Guimarães h1,
+#Radia_Perlman h1 {
+    color: white;
+    font-size: 70px;
+    text-align: center;
+    transition: 0.2s ease-in-out;
 }
 
-#Sônia_Guimarães {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: row-reverse;
-    background: linear-gradient(180deg, rgb(255, 96, 122), rgb(255, 50, 90));
+#Grace_Hopper h1:hover,
+#Ada_Lavelace h1:hover,
+#Margaret_Hamilton h1:hover,
+#Katherine_Johson h1:hover,
+#Radia_Perlman h1:hover,
+#Sônia_Guimarães h1:hover {
+    text-shadow: 0 0 50px white;
 }
 
-#Sônia_Guimarães .card {
-    background-color: white;
-    width: 800px;
-    padding: 50px;
-    border-radius: 20px;
-    box-shadow: 0 0 30px rgb(255, 96, 122);
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
+#Grace_Hopper p,
+#Ada_Lavelace p,
+#Margaret_Hamilton p,
+#Katherine_Johson p,
+#Sônia_Guimarães p,
+#Radia_Perlman p {
+    color: white;
+    text-align: center;
+    max-width: 1000px;
 }
 
-#Sônia_Guimarães img {
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 50%;
+
+#Ada_Lavelace::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(img/Ada\ Lovelace.png);
+    background-position: center;
+    background-size: cover;
+    filter: brightness(0.5);
+    z-index: -1;
+}
+
+
+#Margaret_Hamilton::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(img/Margaret\ Hamilton.png);
+    background-position: center;
+    background-size: cover;
+    filter: brightness(0.5);
+    z-index: -1;
+}
+
+
+
+#Katherine_Johson::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(img/Katherine\ Johnson.png);
+    background-position: center;
+    background-size: cover;
+    filter: brightness(0.5);
+    z-index: -1;
+}
+
+
+#Radia_Perlman::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(img/radia-perlman-a-visionaria-que-moldou-a-internet.webp);
+    background-position: center;
+    background-size: cover;
+    filter: brightness(0.5);
+    z-index: -1;
+}
+
+
+#Sônia_Guimarães::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(img/sonia_guimaraes.jpg);
+    background-position: center;
+    background-size: cover;
+    filter: brightness(0.5);
+    z-index: -1;
+}
+
+.info-section {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.info-section.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
