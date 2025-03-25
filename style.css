@@ -52,7 +52,7 @@ nav ul li .mulheres {
 }
 
 nav ul li .mulheres:hover {
-    box-shadow: 0 0 30px rgb(255, 0, 43);
+    text-shadow: 0 0 5px white;
 }
 
 nav ul li .mulheres::after {
@@ -68,7 +68,7 @@ nav ul li .mulheres::after {
 }
 
 nav ul li .mulheres:hover::after {
-    width: 105%;
+    width: 100%;
 }
 
 
@@ -243,10 +243,27 @@ nav ul li .mulheres:hover::after {
     box-shadow: 0 0 30px rgb(255, 0, 43);
 }
 
+#home .texto #acessar_app {
+    padding: 10px 10px;
+    border-radius: 20px;
+    background-color: white;
+    color: rgb(100, 3, 19);
+    border: none;
+    transition: 0.2s ease-in-out;
+    text-decoration: none;
+    margin-top: 30px;
+    margin-left: 60px;
+    width: 9%;
+}
+
+#home .texto #acessar_app:hover {
+    box-shadow: 0 0 30px rgb(255, 0, 43);
+}
+
 #Grace_Hopper,
 #Ada_Lavelace,
 #Margaret_Hamilton,
-#Katherine_Johson,
+#Katherine_Johnson,
 #Sônia_Guimarães,
 #Radia_Perlman {
     display: flex;
@@ -276,7 +293,7 @@ nav ul li .mulheres:hover::after {
 #Grace_Hopper h1,
 #Ada_Lavelace h1,
 #Margaret_Hamilton h1,
-#Katherine_Johson h1,
+#Katherine_Johnson h1,
 #Sônia_Guimarães h1,
 #Radia_Perlman h1 {
     color: white;
@@ -288,7 +305,7 @@ nav ul li .mulheres:hover::after {
 #Grace_Hopper h1:hover,
 #Ada_Lavelace h1:hover,
 #Margaret_Hamilton h1:hover,
-#Katherine_Johson h1:hover,
+#Katherine_Johnson h1:hover,
 #Radia_Perlman h1:hover,
 #Sônia_Guimarães h1:hover {
     text-shadow: 0 0 50px white;
@@ -297,7 +314,7 @@ nav ul li .mulheres:hover::after {
 #Grace_Hopper p,
 #Ada_Lavelace p,
 #Margaret_Hamilton p,
-#Katherine_Johson p,
+#Katherine_Johnson p,
 #Sônia_Guimarães p,
 #Radia_Perlman p {
     color: white;
@@ -337,7 +354,7 @@ nav ul li .mulheres:hover::after {
 
 
 
-#Katherine_Johson::before {
+#Katherine_Johnson::before {
     content: "";
     position: absolute;
     top: 0;
